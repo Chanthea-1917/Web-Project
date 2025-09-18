@@ -1,0 +1,301 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: teal;
+    /* background: rgb(255, 255, 255); */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    /* position: fixed;     */
+}
+.picture {
+    margin-left: 72px;
+}
+.picture img{
+    width: 56px;
+}
+.menu{
+    display: flex;
+    gap: 44px;
+    margin-right: 72px;
+    align-items: center;    
+}
+nav a{
+    text-decoration: none;
+    position: relative;
+    font-size: 22px;
+    color: white;
+}
+nav a:after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(blue,aqua);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav a:hover:after{
+    width: 100%;
+}
+header{
+    background: #FECEAB  ;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 24px 88px;  
+}
+.content img{
+    width: 100%;
+}
+.container{
+    margin-top: 200px;
+    width: 100%;    
+}
+.container h2{
+    background: teal;
+    color: white;
+    box-sizing: border-box;
+    padding: 24px 0px ;
+    text-align: center;
+    width: 100%;
+    /* margin-left: 10px; */
+    /* border-radius: 24px; */
+}
+#Vocabulary{
+    background: lightblue;
+}
+.pic_container{
+    display:flex ;
+    gap: 20px;
+    margin: 16px 10px;
+}
+.pic_container .card img {
+    width: 96%;
+    border-radius: 12px;
+}
+.card01 img{
+    width: 300px;
+    border-radius: 12px;
+}
+/* .card02 img{
+    width: 350px;
+    border-radius: 12px;
+} */
+button{
+    padding: 12px 40px;
+    border: none;
+    border-radius: 10px;
+    background: #258def;
+    margin: 24px;
+
+}
+button a{
+        text-decoration: none;
+        color: white;
+}
+.card,.card01{
+    text-align: center;
+    background:white;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+
+
+h3{
+    padding-left: 24px;
+}
+h4{
+    margin-bottom: 34px;
+    text-align: center;
+}
+main{
+    display: flex;
+    margin-top: 56px;
+    gap: 110px;
+    padding: 14px;
+    border-radius: 32px;
+    font-size: 20px;
+}
+
+
+
+
+
+.games{
+    width: 98%;
+    display: flex;
+    gap: 21px;
+}
+.practices , .matching{
+    width: 88%;
+    background:rgb(148, 148, 213);
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 54px 0px;
+    align-items: center;
+}
+
+.games .practices,.matching{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.matching{
+    background: green;
+}
+
+
+
+.picture_under_games{
+    display: flex;
+    gap: 21px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.picture_under_games img{
+    width: 98%;
+    border-radius: 24px;
+}
+.description{
+    /* background: teal; */
+    width: 98.4%;
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 56px;
+    font-size: 20px;
+
+}
+.description h2{
+    color: teal;
+}
+.story{
+    display: flex;
+    /* background: rgb(224, 222, 222); */
+    padding-top:100px ;
+    padding-left: 100px;
+    gap:130px;
+}
+.story img{
+    width: 700px;
+    height: 500px;
+    padding-top: 200px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    /* background:rgb(128, 176, 176); */
+    width:40% ;
+    padding: 40px 56px;
+    margin-bottom: 100px;
+}
+.title a{
+    font-size: 18px;
+    color:rgb(54, 4, 54);
+    padding: 12px;
+   
+}
+#Reading h1{
+    background: teal;
+    text-align: center;
+    color: white;
+    padding: 16px;
+    margin-top: 100px;
+
+}
+.title h2{
+    padding-left: 150px;
+    font-size: 30px;
+}
+.tense{
+    display: flex;
+    flex-direction: column;
+}
+#Grammar{
+    margin-top: 88px;
+}
+#Grammar h1{
+    /* background: teal; */
+    box-sizing: border-box;
+    padding: 12px;
+    text-align: center;
+    /* color: white; */
+}
+.tense{
+    padding: 24px 200px;
+}
+.tense a{
+    padding: 12px;
+}
+table{
+    border: none;
+    width: 100%;
+}
+th{
+    background: teal;
+    color: white;
+    padding: 24px;
+   
+}
+tr th td{
+     border-collapse: collapse;
+}
+td{
+    padding: 18px;
+}
+td a{
+    text-decoration: none;
+}
+tr:nth-of-type(even){
+    background: rgb(227, 225, 225);
+}
+tr:hover {
+    background-color:rgba(81, 229, 229, 0.397);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+footer{
+    padding: 56px;
+    background: wheat;
+
+}
+.menu-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo img{
+    width: 56px;
+    padding-top: 36px;
+}
+.link-own-website,.link-website{
+    display: flex;
+    flex-direction: column; 
+}
+.link-website a, .link-own-website a{
+    padding: 12px;
+}
+.footer-describe p{
+    font-size: 14px;
+    color: rgb(72, 69, 69);
+}
+.footer-describe{
+    padding: 56px 248px;
+}
