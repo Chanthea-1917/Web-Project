@@ -58,9 +58,57 @@ header{
 }
 
 
+.container{
+    /* background: greenyellow; */
+    width: 50%;
+    margin-top: 24px;
+    display: flex;
+    justify-self: center;
+}
+.content h2{
+    text-align: center;
+    padding: 56px;
+}
+.usage{
+    background:lightgrey;
+    padding: 12px ;
+    margin-bottom: 12px;
+}
+.positive, .negative, .question{
+    padding-bottom: 12px;
+}
+.guide{
+    margin-top: 32px;
+}
+.do, .does{
+    display: flex;
+    gap: 80px;
+    padding: 12px;
+}
+.does{
+    gap: 120px;
+}
+.s{
+    margin-top: 56px;
+}
+.rules{
+    margin-top: 56px;
+}
+.rules li{
+    padding: 6px;
+}
+.adverb-frequency span{
+    color: teal;
 
-
-
+}
+.practices form .one{
+    display: flex;
+    /* background: red; */
+   
+}
+.practices{
+     margin-top: 24px;
+}
 
 
 
