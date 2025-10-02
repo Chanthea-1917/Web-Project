@@ -49,13 +49,13 @@ nav a:after{
 nav a:hover:after{
     width: 100%;
 }
-/* header{
-    background: #FECEAB  ;
+header{
+    background: rgb(237, 233, 233) ;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 24px 88px;  
-} */
+}
 .container h2{
     text-align: center;
     padding: 56px;
@@ -65,27 +65,19 @@ nav a:hover:after{
 .content{
     display: flex;
     gap: 310px;
-    background: gray;
-    width: 70%;
-    /* display: flex; */
-    /* align-content: center; */
-    padding: 56px;
+    padding: 32px 200px;
 }
 .container .w-definition{
     display: flex;
     justify-content: space-between;
-    padding: 12px 400px;
-}
-.word{
-    /* background: red; */
-    width: 100wh;
-    /* margin-left: 300px; */
+    padding: 12px 300px;
 }
 .definition img{
     width: 400px;
-    /* padding-right: 40px; */
 }
-
+.word h3, .definition h3{
+    margin: 32px 80px ;
+}
 
 
 

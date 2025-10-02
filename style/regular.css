@@ -50,8 +50,7 @@ nav a:hover:after{
     width: 100%;
 }
 header{
-    background: white ;
-    /* background: rgb(238, 202, 95); */
+    background: rgb(237, 233, 233) ;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;

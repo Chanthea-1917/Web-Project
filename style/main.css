@@ -51,7 +51,7 @@ nav a:hover:after{
     width: 100%;
 }
 header{
-    background:  ;
+    background: rgb(237, 233, 233) ;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -124,28 +124,55 @@ main{
     font-size: 20px;
 }
 #gamequizze{
-    background: rgb(32, 204, 204);
-    width: 74%;
+    background: #ffffff;
+    /* background: red; */
     display: flex;
-    justify-content: space-between;
-    padding: 100px 200px;
+    gap: 172px;
+    justify-content: center;
+    padding-bottom: 200px;
+
 
 }
+.heading{
+    text-align: center;
+    margin-top: 56px;
+}
+.heading h1{
+    color: teal;
+}
 .practices {
-    border-radius: 24px;
+    padding: 56px 0px;
+    /* background: red; */
+
+}
+.practices h2{
+    text-align: center;
+}
+.practices a{
+    background: teal;
     box-sizing: border-box;
-    padding: 24px 0px;
-}
-.practices h1{
+    padding: 12px 24px;
+    width: 200px;
+    text-align: center;
+    border: none;
+    border-radius: 14px;
     color: white;
+    text-decoration: none;
+    align-self: center;
 }
-.games .practices, .matching{
+.img-letters .practices{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 .game-image img{
-    width: 600px;
+    width: 540px;
+    /* margin-top: 200px;    */
+}
+.img-letters{
+    display: flex;
+    margin-top: 100px;
+    gap: 200px;
 }
 
 
@@ -159,21 +186,8 @@ main{
     width: 98%;
     border-radius: 24px;
 }
-.description{
-    /* background: teal; */
-    width: 98.4%;
-    border-radius: 24px;
-    box-sizing: border-box;
-    padding: 56px;
-    font-size: 20px;
-
-}
-.description h2{
-    color: teal;
-}
 .story{
     display: flex;
-    /* background: rgb(224, 222, 222); */
     padding-top:100px ;
     padding-left: 100px;
     gap:130px;
@@ -186,7 +200,6 @@ main{
 .title{
     display: flex;
     flex-direction: column;
-    /* background:rgb(128, 176, 176); */
     width:40% ;
     padding: 40px 56px;
     margin-bottom: 100px;
@@ -217,11 +230,9 @@ main{
     margin-top: 88px;
 }
 #Grammar h1{
-    /* background: teal; */
     box-sizing: border-box;
     padding: 12px;
     text-align: center;
-    /* color: white; */
 }
 .tense{
     padding: 24px 200px;
@@ -255,12 +266,21 @@ tr:hover {
     background-color:rgba(81, 229, 229, 0.397);
     cursor: pointer;
     transition: 0.3s;
-
 }
+.button{
+    padding-right: 100px;
+}
+.link-own-website a{
+    text-decoration: none;
+}
+.link-own-website i{
+    font-size: 32px;
+    margin-right: 12px;
+}
+
 footer{
     padding: 56px;
-    /* background: wheat; */
-    background: rgba(213, 138, 9, 0.771);
+    background: rgba(236, 183, 92, 0.771);
 
 }
 .menu-footer{
