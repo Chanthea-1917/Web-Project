@@ -127,7 +127,14 @@ select{
 
 }
 
-
+.link-own-website a{
+    text-decoration: none;
+}
+.link-own-website i{
+    font-size: 30px;
+    margin-right: 12px;
+  
+}
 
 
 footer{
@@ -148,7 +155,7 @@ footer{
     flex-direction: column; 
 }
 .link-website a, .link-own-website a{
-    padding: 12px;
+    padding: 8px;
 }
 .footer-describe p{
     font-size: 14px;
