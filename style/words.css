@@ -65,7 +65,10 @@ nav a:hover:after{
 .content{
     display: flex;
     gap: 310px;
-    /* justify-content: space-between; */
+    background: gray;
+    width: 70%;
+    /* display: flex; */
+    /* align-content: center; */
     padding: 56px;
 }
 .container .w-definition{
@@ -76,7 +79,7 @@ nav a:hover:after{
 .word{
     /* background: red; */
     width: 100wh;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
 .definition img{
     width: 400px;

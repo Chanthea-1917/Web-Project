@@ -50,107 +50,52 @@ nav a:hover:after{
     width: 100%;
 }
 header{
-    background: #FECEAB  ;
+    background: white ;
+    /* background: rgb(238, 202, 95); */
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 24px 88px;  
 }
-
-
-.container{
-    /* background: greenyellow; */
-    width: 50%;
-    margin-top: 24px;
-    display: flex;
-    justify-self: center;
-}
-.content h2{
+main h3{
     text-align: center;
-    padding: 56px;
+    margin-top: 72px;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
-.usage{
-    background:lightgrey;
-    padding: 12px ;
-    margin-bottom: 12px;
+.back a{
+    margin: 208px;
 }
-.positive, .negative, .question{
-    padding-bottom: 12px;
-}
-.guide{
-    margin-top: 32px;
-}
-.do,.does{
-    display: flex;
-}
-
-.s{
-    margin-top: 56px;
-}
-.rules{
-    margin-top: 56px;
-}
-.rules li{
-    padding: 6px;
-}
-.adverb-frequency{
-    padding-top: 24px;
-}
-.adverb-frequency span{
-    color: teal;
-}
-.ex-adverb b{
-    color: teal;
-}
-.practices form .one{
-    display: flex;
-    padding: 8px;
-    /* background: red; */
-   
-}
-.practices{
-    margin-top: 24px;
-}
-.practices h3{
-    font-size: 20px;
-    padding-top: 56px;
-    padding-bottom: 24px;
-}
-.guide{
-    margin-left: 100px;
-}
-hr{
-    width: 64%;
-}
-select option{
-    width: 4%;
-}
-#mypractices{
-    width: 132px;
-    height: 28px;
-}
-form select{
-    font-size: 17px;
-}
-.does p{
-    padding: 8px;
-    width: 30%;
-    /* background: #000; */
-}
-.button-check-answer{
-    margin-top: 24px;
-    margin-bottom: 100px;
-    padding: 12px 24px;
+table{
+    margin-left: 208px;
     border: none;
-    border-radius: 12px;
+    width: 72%;
+    margin-bottom: 56px;
+}
+th{
     background: teal;
     color: white;
-    display: flex;
-    justify-self: center;
+    padding: 18px;
+   
+}
+td{
+    padding: 8px 56px;
+}
+tr th td{
+     border-collapse: collapse;
+}
+tr:nth-of-type(even){
+    background: rgb(227, 225, 225);
+}
+tr:hover {
+    background-color:rgba(81, 229, 229, 0.397);
+    cursor: pointer;
+    transition: 0.3s;
+
 }
 
 
-
+.
 
 
 footer{

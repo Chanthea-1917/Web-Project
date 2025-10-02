@@ -50,7 +50,7 @@ nav a:hover:after{
     width: 100%;
 }
 header{
-    background: #FECEAB  ;
+     background: white;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -65,90 +65,67 @@ header{
     display: flex;
     justify-self: center;
 }
-.content h2{
-    text-align: center;
-    padding: 56px;
-}
-.usage{
-    background:lightgrey;
-    padding: 12px ;
-    margin-bottom: 12px;
-}
-.positive, .negative, .question{
-    padding-bottom: 12px;
-}
-.guide{
-    margin-top: 32px;
-}
-.do,.does{
-    display: flex;
-}
 
-.s{
-    margin-top: 56px;
-}
-.rules{
-    margin-top: 56px;
-}
-.rules li{
-    padding: 6px;
-}
-.adverb-frequency{
-    padding-top: 24px;
-}
-.adverb-frequency span{
-    color: teal;
-}
-.ex-adverb b{
-    color: teal;
-}
-.practices form .one{
+
+.containers{
+    padding: 16px;
     display: flex;
-    padding: 8px;
-    /* background: red; */
+    flex-direction: column;
+    /* background: rgb(113, 203, 203); */
+    background: rgba(214, 212, 212, 0.612);
+    width: 60%;
+    justify-self: center;
+    margin-bottom: 100px;
+}
+.containers h1{
+    text-align: center;
+    padding-top: 64px;
+}
+.content h3{
+    padding: 32px;
    
 }
-.practices{
-    margin-top: 24px;
+
+.action{
+    width: 50%;
+    display: flex;
+    gap: 24px;
+    padding-left: 100px;
+    padding-top: 12px;
 }
-.practices h3{
-    font-size: 20px;
-    padding-top: 56px;
-    padding-bottom: 24px;
+select{
+    width: 32%;
+    height: 4vh;
 }
-.guide{
-    margin-left: 100px;
-}
-hr{
-    width: 64%;
-}
-select option{
-    width: 4%;
-}
-#mypractices{
-    width: 132px;
-    height: 28px;
-}
-form select{
-    font-size: 17px;
-}
-.does p{
-    padding: 8px;
-    width: 30%;
-    /* background: #000; */
-}
-.button-check-answer{
-    margin-top: 24px;
-    margin-bottom: 100px;
-    padding: 12px 24px;
+.containers button{
+    padding: 10px 12px;
+    background: teal;
+    width: 16%;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
     border: none;
     border-radius: 12px;
-    background: teal;
-    color: white;
-    display: flex;
-    justify-self: center;
+
 }
 
+.containers button a{
+    color: white;
+    text-decoration: none;
+}
+.next-exercise{
+    margin-left: 100px;
+}
+.next-exercise a{
+    padding:4px 8px;
+    border: none;
+    border-radius: 16px;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    background: teal;
+
+}
 
 
 
