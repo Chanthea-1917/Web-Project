@@ -115,3 +115,130 @@ footer{
 .footer-describe{
     padding: 56px 248px;
 }
+@media(max-width:1024px){
+    .menu {
+        gap: 22px;
+
+    }
+    .content{
+        padding-left: 72px;
+        gap: 120px;
+        margin-left: 56px;
+    }
+    .container .w-definition{
+        padding-right: 400px;
+        padding-left: 140px;
+      }
+      .container h2{
+        padding-right: 240px;
+      }
+
+}
+@media(max-width:768px){
+    .picture img{
+        width: 42px;
+    }
+    .menu{
+        gap: 16px;
+    }
+    .menu a{
+        font-size: 18px;
+    }
+    header h1{
+        font-size: 24px;
+    }
+    .content{
+        gap: 24px;
+        padding-right: 100px;
+        margin-left: -30px;
+    }
+    .word p{
+        margin-right: 56px;
+        width:200px;
+    }
+    .container .w-definition{
+        padding-right: 300px;
+        padding-left: 80px;
+      }
+      .container h2{
+        padding-right: 240px;
+      }
+      .footer-describe{
+        padding-right: -100px;
+      }
+          .footer-describe{
+        width: 80%;
+        margin-left: 100px;
+        padding: 24px 0px;
+        
+    }
+}
+
+@media(max-width:426px){
+    .navbar{
+        width: 174%;
+        gap: 100px;
+    }
+    .menu{
+        margin-left: 40px;
+    }
+    header{
+        width: 174%;
+    }
+    .container{
+        width: 174%;
+    }
+    .container h2{
+        margin-left: 200px;
+    }
+    footer{
+        width: 148%;
+    }
+}
+@media(max-width:376px){
+    .navbar ,header{
+        width: 192.5%;
+    }
+    footer{
+        width:163%;
+    }
+    .w-definition h3:nth-child(2){
+        margin-left: 200px !important ;
+    }
+}
+@media(max-width:320px){
+    .navbar{
+        width: 226%;
+    }
+    .content{
+        display: block;
+        gap: 24px;
+    }
+    .container .w-definition h3:nth-child(2){
+        display: none;
+    }
+    .container .w-definition h3{
+        font-size: 22px;
+        margin-left: 100px;
+    }
+    .definition p{
+        display: none;
+    }
+    .definition img{
+        margin-left: 250px;
+    }
+    .word{
+        margin-left: 32px;
+        padding-left: 0px;
+    }
+    .word p{
+        font-size: 22px;
+        width: 100%;
+    }
+    header{
+        width: 226%;
+    }
+    footer{
+        width: 191%;
+    }
+}
