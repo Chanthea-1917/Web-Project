@@ -1,60 +1,131 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-*{
-    padding: 0;
+* {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+
+:root {
+    --brand: teal;
+    --brand-dark: teal;
+    --brand-soft: lightblue;
+    --hero-bg: rgb(237, 233, 233);
+    --footer-bg: rgba(236, 183, 92, 0.771);
+    --accent: #258def;
+    --ink: #000000;
+    --muted: rgb(72, 69, 69);
+    --line: #d9e2e7;
+    --surface: #ffffff;
+    --surface-soft: #f6f8f9;
+    --shadow: 0 14px 36px rgba(23, 32, 38, 0.1);
+    --radius: 8px;
+    --container: 1180px;
+}
+
+html {
     scroll-behavior: smooth;
 }
-.navbar{
-    background: teal;
-    /* background: rgb(255, 255, 255); */
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 24px;
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    color: var(--ink);
+    background: var(--surface);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+.navbar {
     position: sticky;
     top: 0;
-    z-index: 9999;
-    /* position: fixed;     */
-}
-.picture {
-    margin-left: 72px;
-}
-.picture img{
-    width: 56px;
-}
-.menu{
+    z-index: 10;
     display: flex;
-    gap: 44px;
-    margin-right: 72px;
-    align-items: center;    
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 100%;
+    padding: 12px max(20px, calc((100vw - var(--container)) / 2 + 20px));
+    background: var(--brand);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    flex-wrap: wrap;
 }
-nav a{
-    text-decoration: none;
+
+.picture {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img {
+    width: 88px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 40px;
+    margin: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px 30px;
+    margin-left: auto;
+}
+
+nav a {
     position: relative;
-    font-size: 22px;
-    color: white;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
 }
-nav a:after{
-    content: '';
+
+nav a::after {
+    content: "";
     position: absolute;
-    background: linear-gradient(blue,aqua);
-    height: 3px;
-    width: 0;
     left: 0;
-    bottom: -6px;
-    transition: 0.3s;
+    bottom: -7px;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: width 0.2s ease;
 }
-nav a:hover:after{
+
+nav a:hover::after {
     width: 100%;
 }
-header{
-    background: rgb(237, 233, 233) ;
+
+header {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    padding: 24px 88px;  
+    align-items: center;
+    padding: 12px 100px;
+    width: 100%;
+    background: rgb(237, 233, 233) ;
+}
+
+header h1 {
+    font-size: 34px;
 }
 .container h2{
     text-align: center;
@@ -115,130 +186,218 @@ footer{
 .footer-describe{
     padding: 56px 248px;
 }
-@media(max-width:1024px){
+
+
+
+
+
+
+@media (max-width: 320px) {
+    .navbar {
+        width: 400%;
+        padding: 24px 32px;
+
+    }
     .menu {
-        gap: 22px;
+        gap: 10px;
+    }
+    .navbar .menu a{
+        font-size: 38px;
 
     }
-    .content{
-        padding-left: 72px;
-        gap: 120px;
-        margin-left: 56px;
-    }
-    .container .w-definition{
-        padding-right: 400px;
-        padding-left: 140px;
-      }
-      .container h2{
-        padding-right: 240px;
-      }
-
-}
-@media(max-width:768px){
     .picture img{
-        width: 42px;
+        width: 156px;
+        border-radius: 100px;
     }
-    .menu{
-        gap: 16px;
-    }
-    .menu a{
-        font-size: 18px;
+
+    header{
+        width: 400%;
+        padding: 14px 24px;
     }
     header h1{
-        font-size: 24px;
+        font-size: 48px;
+    }
+    header .paragraph{
+        font-size: 32px;
     }
     .content{
-        gap: 24px;
-        padding-right: 100px;
-        margin-left: -30px;
+        gap: 0px;
+        padding: 0px;
+        display: block;
     }
-    .word p{
-        margin-right: 56px;
-        width:200px;
+    .container{
+        width: 400%;
+
     }
-    .container .w-definition{
-        padding-right: 300px;
-        padding-left: 80px;
-      }
-      .container h2{
-        padding-right: 240px;
-      }
-      .footer-describe{
-        padding-right: -100px;
-      }
-          .footer-describe{
-        width: 80%;
-        margin-left: 100px;
-        padding: 24px 0px;
-        
+    .container h2{
+        font-size: 42px;
+        margin-top: 32px;
+    }
+    .container .word{
+        width: 400%;
+        padding-left: 100px;
+        padding-bottom: 24px;
+    }
+    .container .word p{
+        font-size: 42px;
+    }
+    .container .content .definition{
+       font-size: 42px;
+       padding-left: 54px;
+    }
+    .menu-footer .logo img{
+        width: 140px;
+        border-radius: 100px;
+    }
+    footer{
+        width: 400%;
+        /* padding: 14px 24px;; */
+    }
+    .menu-footer a{
+        font-size: 32px;
+    }
+    .footer-describe p{
+        font-size: 32px;
+    }
+    
+}
+
+/* Bootstrap responsive support while keeping the original visual style */
+@media (max-width: 1024px) {
+    .navbar {
+        position: static;
+        padding: 14px 24px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .content {
+        gap: 48px;
+        padding: 32px;
+    }
+
+    .container .w-definition {
+        padding: 12px 48px;
+    }
+
+    .definition img {
+        width: min(100%, 360px);
+    }
+
+    .footer-describe {
+        padding: 40px 80px;
     }
 }
 
-@media(max-width:426px){
-    .navbar{
-        width: 174%;
-        gap: 100px;
-    }
-    .menu{
-        margin-left: 40px;
-    }
-    header{
-        width: 174%;
-    }
-    .container{
-        width: 174%;
-    }
-    .container h2{
-        margin-left: 200px;
-    }
-    footer{
-        width: 148%;
-    }
-}
-@media(max-width:376px){
-    .navbar ,header{
-        width: 192.5%;
-    }
-    footer{
-        width:163%;
-    }
-    .w-definition h3:nth-child(2){
-        margin-left: 200px !important ;
-    }
-}
-@media(max-width:320px){
-    .navbar{
-        width: 226%;
-    }
-    .content{
-        display: block;
-        gap: 24px;
-    }
-    .container .w-definition h3:nth-child(2){
-        display: none;
-    }
-    .container .w-definition h3{
-        font-size: 22px;
-        margin-left: 100px;
-    }
-    .definition p{
-        display: none;
-    }
-    .definition img{
-        margin-left: 250px;
-    }
-    .word{
-        margin-left: 32px;
-        padding-left: 0px;
-    }
-    .word p{
-        font-size: 22px;
+@media (max-width: 768px) {
+    .navbar,
+    header,
+    .container,
+    footer {
         width: 100%;
     }
-    header{
-        width: 226%;
+
+    .picture img {
+        width: 64px;
+        margin: 4px;
     }
-    footer{
-        width: 191%;
+
+    .menu {
+        width: 100%;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header .paragraph {
+        font-size: 18px;
+    }
+
+    .container h2 {
+        padding: 40px 16px;
+        font-size: 32px;
+    }
+
+    .content,
+    .container .w-definition {
+        display: block;
+        padding: 16px;
+    }
+
+    .word h3,
+    .definition h3 {
+        margin: 24px 0 12px;
+    }
+
+    .definition img {
+        margin: 24px auto 0;
+    }
+
+    .menu-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .menu-footer .logo img {
+        width: 76px;
+    }
+
+    .menu-footer a,
+    .footer-describe p {
+        font-size: 16px;
+    }
+
+    .footer-describe {
+        padding: 32px 0 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        padding: 14px 12px;
+    }
+
+    .menu {
+        gap: 10px 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .container .word,
+    .container .word p,
+    .container .content .definition {
+        width: 100%;
+        padding-left: 0;
+        font-size: 16px;
     }
 }
